@@ -1,0 +1,3222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_40ecfefb9f030932196115abedc6d558 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_40ecfefb9f030932196115abedc6d558" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_40ecfefb9f030932196115abedc6d558 = L.map(
+                "map_40ecfefb9f030932196115abedc6d558",
+                {
+                    center: [44.25382, -72.7870551],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b601e6c8e0be60323a842882a98782fe = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_b601e6c8e0be60323a842882a98782fe.addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            var circle_96d69a6bd25c0d66d5765101ee816df7 = L.circle(
+                [44.3804693, -72.9100056],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_96d69a6bd25c0d66d5765101ee816df7.bindTooltip(
+                `<div>
+                     <b>MAPLE ST  AND  MOUNTAIN VIEW DR</b><br/>7:38 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b450b2acc57deeab61566716e0040d03 = L.circle(
+                [44.1361621, -72.9078617],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b450b2acc57deeab61566716e0040d03.bindTooltip(
+                `<div>
+                     <b>WARREN/SUGARBUSH FIRE STATION</b><br/>7:53 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d8240380e28af6f6845eb11dafe526c6 = L.circle(
+                [44.1423289, -72.8842009],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d8240380e28af6f6845eb11dafe526c6.bindTooltip(
+                `<div>
+                     <b>SUGARBUSH ACCESS RD AND GOLF COURSE RD</b><br/>7:55 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_10c8a44c30b69c2bb8b2588d6eeab33b = L.circle(
+                [44.15141209999999, -72.8823474],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_10c8a44c30b69c2bb8b2588d6eeab33b.bindTooltip(
+                `<div>
+                     <b>3068 GERMAN FLATS RD</b><br/>7:57 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1d079830da58c69a2e6ae85e2f62d27b = L.circle(
+                [44.1807194, -72.881596],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_1d079830da58c69a2e6ae85e2f62d27b.bindTooltip(
+                `<div>
+                     <b>GERMAN FLATS RD AND HIDDENWOOD RD AND HIDDENWOOD TURN</b><br/>8:01 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2415cc60bd24a7445f128fb689675567 = L.circle(
+                [44.1825884, -72.8660941],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2415cc60bd24a7445f128fb689675567.bindTooltip(
+                `<div>
+                     <b>MILL BROOK RD AND HARRIS HL</b><br/>8:04 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ee5e06654cee621c55e5475be5132d78 = L.circle(
+                [44.2563899, -72.860581],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ee5e06654cee621c55e5475be5132d78.bindTooltip(
+                `<div>
+                     <b>N FAYSTON RD AND SHARPSHOOTERS RD</b><br/>7:52 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a7935b500d1e84b6969f46312bd6203c = L.circle(
+                [44.2416708, -72.8547829],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a7935b500d1e84b6969f46312bd6203c.bindTooltip(
+                `<div>
+                     <b>N FAYSTON RD AND HOFFMAN RD</b><br/>7:51 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_940e7403d654596b27ff6de38fe086f0 = L.circle(
+                [44.18317, -72.850824],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_940e7403d654596b27ff6de38fe086f0.bindTooltip(
+                `<div>
+                     <b>MILL BROOK RD AND TUCKER HILL RD</b><br/>8:05 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3725231a503debfe66bd660c9b31678b = L.circle(
+                [44.2268084, -72.850274],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_3725231a503debfe66bd660c9b31678b.bindTooltip(
+                `<div>
+                     <b>CENTER FAYSTON RD AND RANDELL RD</b><br/>8:04 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_037e058f146a59dc30fcb66a5e1ad9d8 = L.circle(
+                [44.24251630000001, -72.8474081],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_037e058f146a59dc30fcb66a5e1ad9d8.bindTooltip(
+                `<div>
+                     <b>N FAYSTON RD AND BOYCE RD</b><br/>7:50 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_00d90f9e606f495b2697e81a5a33aa75 = L.circle(
+                [44.2199309, -72.8467869],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_00d90f9e606f495b2697e81a5a33aa75.bindTooltip(
+                `<div>
+                     <b>CENTER FAYSTON RD AND KEW VASSEUR RD</b><br/>8:02 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b246a2574f1d95a74f4b95932d4156a9 = L.circle(
+                [44.34164691125497, -72.84092443],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b246a2574f1d95a74f4b95932d4156a9.bindTooltip(
+                `<div>
+                     <b>277 MAPLE STREET</b><br/>7:42 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_62e332bd3ca55177d8966ce0341fecb9 = L.circle(
+                [44.102426, -72.8353659],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_62e332bd3ca55177d8966ce0341fecb9.bindTooltip(
+                `<div>
+                     <b>BROOK RD AND BEHN RD</b><br/>7:28 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_80cc4c2f2dcf5cdf50bfc44ad1f6d1b5 = L.circle(
+                [44.075302, -72.8344209],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_80cc4c2f2dcf5cdf50bfc44ad1f6d1b5.bindTooltip(
+                `<div>
+                     <b>BIRCH ST AND PLUNKTON RD</b><br/>7:34 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_02d4936c75d4b5b863e4df2fe558951a = L.circle(
+                [44.241874, -72.8343711],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_02d4936c75d4b5b863e4df2fe558951a.bindTooltip(
+                `<div>
+                     <b>N FAYSTON RD AND NELSON FARM RD</b><br/>7:48 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d61f044e94b61379d27648deb5588a45 = L.circle(
+                [44.2406644, -72.8295727],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d61f044e94b61379d27648deb5588a45.bindTooltip(
+                `<div>
+                     <b>2485 N FAYSTON RD</b><br/>7:48 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b859f9a96c3e62ddc92e0afe7d9ab706 = L.circle(
+                [44.1168909, -72.829533],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b859f9a96c3e62ddc92e0afe7d9ab706.bindTooltip(
+                `<div>
+                     <b>AIRPORT ROAD  AND  LAFLAME ROAD/AIRPORT ENTRANCE</b><br/>7:53 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4e8bf7f9375f1d65872dce9f2ece8123 = L.circle(
+                [44.358518, -72.828923],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4e8bf7f9375f1d65872dce9f2ece8123.bindTooltip(
+                `<div>
+                     <b>RIVER RD AND CAMELS HUMP RD AND CAMELS HUMP TURNAROUN</b><br/>7:39 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4e6d4fa673279eebf630526d343ad657 = L.circle(
+                [44.320949, -72.825562],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4e6d4fa673279eebf630526d343ad657.bindTooltip(
+                `<div>
+                     <b>1461 RIPLEY RD</b><br/>7:42 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5f5743935a2554c9ac50ff68f0e2288e = L.circle(
+                [44.320949, -72.825562],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_5f5743935a2554c9ac50ff68f0e2288e.bindTooltip(
+                `<div>
+                     <b>1387 RIPLEY RD</b><br/>7:43 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6ed628997642b556f10dee6ea54aff28 = L.circle(
+                [44.320949, -72.825562],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_6ed628997642b556f10dee6ea54aff28.bindTooltip(
+                `<div>
+                     <b>610 RIPLEY RD</b><br/>7:45 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_85dc6fa791cc154d25e2608ec55d2b49 = L.circle(
+                [44.2163497, -72.8245344],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_85dc6fa791cc154d25e2608ec55d2b49.bindTooltip(
+                `<div>
+                     <b>CENTER FAYSTON RD AND STRONG RD</b><br/>7:59 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_120ca713bd766ec2954759058a4131c2 = L.circle(
+                [44.1907905, -72.8241842],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_120ca713bd766ec2954759058a4131c2.bindTooltip(
+                `<div>
+                     <b>VILLAGE GROCERY/WAITSFIELD LIBRARY</b><br/>8:15 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cdb7f6e595d7ebdb7cfcc1b52a9bc57e = L.circle(
+                [44.2375903, -72.8198135],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_cdb7f6e595d7ebdb7cfcc1b52a9bc57e.bindTooltip(
+                `<div>
+                     <b>N FAYSTON RD AND SMITH RD</b><br/>7:47 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a7f9f0ea78ea0ac65eafabe3d3589cda = L.circle(
+                [44.20004309999999, -72.8191087],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a7f9f0ea78ea0ac65eafabe3d3589cda.bindTooltip(
+                `<div>
+                     <b>OLD COUNTY RD AND BRIGHTENBACK LN</b><br/>8:11 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_71a3f3d04476a329b542ce7f72e3ff6f = L.circle(
+                [44.2013198, -72.8164873],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_71a3f3d04476a329b542ce7f72e3ff6f.bindTooltip(
+                `<div>
+                     <b>OLD COUNTY RD AND OLD CENTER FAYSTON RD</b><br/>8:11 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2eac3b5dc711884b6eece07b4d57cafa = L.circle(
+                [44.1746495, -72.8137955],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2eac3b5dc711884b6eece07b4d57cafa.bindTooltip(
+                `<div>
+                     <b>E WARREN RD AND PALMER LN AND PALMER LN TURN AROUND</b><br/>7:52 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_371c97bb959a188a39cf91596bb29def = L.circle(
+                [44.1244612, -72.811104],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_371c97bb959a188a39cf91596bb29def.bindTooltip(
+                `<div>
+                     <b>CIDER HILL ROAD AND E WARREN RD</b><br/>7:58 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d8e21eae4a0e1fa496125a6146dce7a9 = L.circle(
+                [44.1320532, -72.8100658],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d8e21eae4a0e1fa496125a6146dce7a9.bindTooltip(
+                `<div>
+                     <b>E WARREN RD AND RIDGE VIEW RD AND RIDGE VIEW RD TURNA</b><br/>8:00 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a409b35c54cb479979870f314320f787 = L.circle(
+                [44.1887055, -72.8081524],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a409b35c54cb479979870f314320f787.bindTooltip(
+                `<div>
+                     <b>JOSLIN HILL RD AND SPRING HILL RD</b><br/>7:48 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ffd4b29795216dae7ebc13a3a0e69507 = L.circle(
+                [44.3605756, -72.8051494],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ffd4b29795216dae7ebc13a3a0e69507.bindTooltip(
+                `<div>
+                     <b>66 JENNY DAVIS RD</b><br/>8:01 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c9b9181669befc87ce3916c8385dd3a0 = L.circle(
+                [44.2027837, -72.8010975],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c9b9181669befc87ce3916c8385dd3a0.bindTooltip(
+                `<div>
+                     <b>NORTH RD AND TREMBLAY RD</b><br/>8:09 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_421f671511c85f0be21e1b2554766dfe = L.circle(
+                [44.1691443, -72.8003863],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_421f671511c85f0be21e1b2554766dfe.bindTooltip(
+                `<div>
+                     <b>1374 COMMON ROAD</b><br/>7:58 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1777e9bfd6b4e800a3ae57a4619ae543 = L.circle(
+                [44.3533447, -72.7994583],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_1777e9bfd6b4e800a3ae57a4619ae543.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND RIVER RD</b><br/>7:51 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_875ae86491259a263c8a23b9da346326 = L.circle(
+                [44.202754, -72.7994392],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_875ae86491259a263c8a23b9da346326.bindTooltip(
+                `<div>
+                     <b>TREMBLAY RD AND PINE BROOK RD</b><br/>8:10 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8027cd234a9b2288216b0c35c7e1f620 = L.circle(
+                [44.1901829, -72.7971877],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8027cd234a9b2288216b0c35c7e1f620.bindTooltip(
+                `<div>
+                     <b>NORTH RD AND EAST RD AND JOSLIN HILL RD AND COMMON RD</b><br/>8:02 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ae241117ec308c4c5a70daf8b54974b8 = L.circle(
+                [44.1720276, -72.7956589],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ae241117ec308c4c5a70daf8b54974b8.bindTooltip(
+                `<div>
+                     <b>COMMON RD AND SCHUSS RD</b><br/>7:59 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9ea392ca4f26f4277f2b96fe4bdc2547 = L.circle(
+                [44.1950519, -72.7953869],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9ea392ca4f26f4277f2b96fe4bdc2547.bindTooltip(
+                `<div>
+                     <b>NORTH RD AND N RIDGE RD</b><br/>8:06 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_67477c9ac6515fa56f304d4e54139d1e = L.circle(
+                [44.175582, -72.795345],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_67477c9ac6515fa56f304d4e54139d1e.bindTooltip(
+                `<div>
+                     <b>COMMON RD AND SKI VALLEY RD</b><br/>7:59 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_38da0c38756b3e9580a817fbb56d5db0 = L.circle(
+                [44.35276611453625, -72.7944375],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_38da0c38756b3e9580a817fbb56d5db0.bindTooltip(
+                `<div>
+                     <b>3105 RIVER ROAD</b><br/>7:43 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d93feb6817c33467738ff1f32db6f778 = L.circle(
+                [44.2237607, -72.7892087],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d93feb6817c33467738ff1f32db6f778.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND AIRPORT RD</b><br/>8:06 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c17f8726a6a32a8bb6e4a5fb1fdb33be = L.circle(
+                [44.307013, -72.7888683],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c17f8726a6a32a8bb6e4a5fb1fdb33be.bindTooltip(
+                `<div>
+                     <b>CROSSETT HL AND FOX HOLW</b><br/>8:02 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_09f0c02f6d1cd3872142d4c6f61f0e7c = L.circle(
+                [44.2568395, -72.7886572],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_09f0c02f6d1cd3872142d4c6f61f0e7c.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND SUNRISE AVE</b><br/>8:19 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1385931bd7c4c51dbe900f26e6243c01 = L.circle(
+                [44.3539903, -72.7885129],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_1385931bd7c4c51dbe900f26e6243c01.bindTooltip(
+                `<div>
+                     <b>1479/1533 US ROUTE 2</b><br/>8:04 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9d3048af15b6adc2cddc3955276811a1 = L.circle(
+                [44.3539903, -72.7885129],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9d3048af15b6adc2cddc3955276811a1.bindTooltip(
+                `<div>
+                     <b>1479 US ROUTE 2</b><br/>8:05 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_20044a61f3ed6ffe882212b4083c67a0 = L.circle(
+                [44.305175, -72.7883187],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_20044a61f3ed6ffe882212b4083c67a0.bindTooltip(
+                `<div>
+                     <b>Devlin Road AND CROSSETT HL</b><br/>8:00 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fb3d3073ce74eaa2141c3f41f582aec1 = L.circle(
+                [44.3087779, -72.7881851],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_fb3d3073ce74eaa2141c3f41f582aec1.bindTooltip(
+                `<div>
+                     <b>CROSSETT HL AND WESTCOTT RD</b><br/>7:59 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3a40b0c118bf97c7ecfcf1282e65ecf5 = L.circle(
+                [44.252462, -72.7879102],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_3a40b0c118bf97c7ecfcf1282e65ecf5.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND DOWSVILLE RD</b><br/>8:20 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0c9a4146d068ee22e5bbe82c50fddd6f = L.circle(
+                [44.26133905862423, -72.78786628],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_0c9a4146d068ee22e5bbe82c50fddd6f.bindTooltip(
+                `<div>
+                     <b>1100 RTE 100</b><br/>7:38 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6bff063af93409e8937da9112b6b50c0 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_6bff063af93409e8937da9112b6b50c0.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:23 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1e192ef65df2e52d02b00024edb9ccf6 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_1e192ef65df2e52d02b00024edb9ccf6.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:30 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0ff5f8546eda7a408b475056b32c30d3 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_0ff5f8546eda7a408b475056b32c30d3.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:30 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d61bdb302452f0e773b7852e21087b36 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d61bdb302452f0e773b7852e21087b36.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:30 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_007a67b46f00a7824d3a3b2f4fec9cef = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_007a67b46f00a7824d3a3b2f4fec9cef.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:30 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ef2f30c8f219278acce7c03d0feaea32 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ef2f30c8f219278acce7c03d0feaea32.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:30 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_63be3b178b63e1708297dcec2c15173b = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_63be3b178b63e1708297dcec2c15173b.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:28 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ff06f49d0ce33dc0d5c7ef415bd10fac = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ff06f49d0ce33dc0d5c7ef415bd10fac.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:30 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_517d0d37422956da3b6686ee2f1cbd51 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_517d0d37422956da3b6686ee2f1cbd51.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:20 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f35a61d58e52794653eb9fc628838a82 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#423d84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#423d84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_f35a61d58e52794653eb9fc628838a82.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:20 AM<br/>12 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8fe2d3fe5d92818995b9a4bc610cbfb9 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8fe2d3fe5d92818995b9a4bc610cbfb9.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:18 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2e32ef9d5a04380ec1f1d51718ccf5af = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2e32ef9d5a04380ec1f1d51718ccf5af.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:25 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_aa4736608c51e01205eba9ab2f835a1c = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_aa4736608c51e01205eba9ab2f835a1c.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:20 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_309a1f9dd1e767eb699c85a852693d69 = L.circle(
+                [44.25382, -72.7870551],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_309a1f9dd1e767eb699c85a852693d69.bindTooltip(
+                `<div>
+                     <b>HARWOOD UNION HS/MS</b><br/>8:20 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_eeceba376edb0d685589ef08705acd8e = L.circle(
+                [44.2480969, -72.785169],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_eeceba376edb0d685589ef08705acd8e.bindTooltip(
+                `<div>
+                     <b>6568 VT ROUTE 100B</b><br/>7:36 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2dc0842db03fc669a4fb2aca467ed9e2 = L.circle(
+                [44.27396419999999, -72.7845591],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2dc0842db03fc669a4fb2aca467ed9e2.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND TURNER HILL RD</b><br/>8:16 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a17fa64abb68d6b76ceed73b9a256538 = L.circle(
+                [44.27396419999999, -72.7845591],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a17fa64abb68d6b76ceed73b9a256538.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND TURNER HILL RD</b><br/>8:18 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_041ffa561b86723948a20dc28921367c = L.circle(
+                [44.2444477, -72.7839345],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_041ffa561b86723948a20dc28921367c.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 S AND OLD CORN FIELD RD</b><br/>8:17 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_06b86f493e3c3c244c5be336efd64da2 = L.circle(
+                [44.2826239, -72.7822826],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_06b86f493e3c3c244c5be336efd64da2.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND WILDER RD</b><br/>8:15 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_371ec7e17785163ee9c83b18a23e5ae6 = L.circle(
+                [44.1968549, -72.780707],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_371ec7e17785163ee9c83b18a23e5ae6.bindTooltip(
+                `<div>
+                     <b>EAST ROAD AND BUSHNELL RD</b><br/>8:04 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_648337ad4471aea7025490a288e99ecb = L.circle(
+                [44.2833903, -72.7766633],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_648337ad4471aea7025490a288e99ecb.bindTooltip(
+                `<div>
+                     <b>STEVENS BROOK RD AND SYDNIE LN AND SYDNIE LANE TURNAR</b><br/>7:38 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_900db6c253170964300f9086f14a25d7 = L.circle(
+                [44.28624860000001, -72.7764106],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_900db6c253170964300f9086f14a25d7.bindTooltip(
+                `<div>
+                     <b>STEVENS BROOK RD AND WELCH RD</b><br/>7:38 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_056bfb2bcf3da3d0ff4a67492cab5a17 = L.circle(
+                [44.29291254940434, -72.77579245],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_056bfb2bcf3da3d0ff4a67492cab5a17.bindTooltip(
+                `<div>
+                     <b>3435 VT ROUTE 100</b><br/>8:14 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_57d45dac705ab23964cd968a855b72b4 = L.circle(
+                [44.2977595, -72.7741835],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_57d45dac705ab23964cd968a855b72b4.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND LOOKOUT DR</b><br/>8:12 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b5fd8ae2ec777197279a51cf6ce4814a = L.circle(
+                [44.344466, -72.773808],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b5fd8ae2ec777197279a51cf6ce4814a.bindTooltip(
+                `<div>
+                     <b>2112 RIVER ROAD</b><br/>7:59 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9101b9bd005c404be1fbe218f33ea354 = L.circle(
+                [44.30768598055175, -72.76831704],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9101b9bd005c404be1fbe218f33ea354.bindTooltip(
+                `<div>
+                     <b>4541 VT ROUTE 100</b><br/>8:11 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9f6eb6a93720783cba8e50712be71eb5 = L.circle(
+                [44.2462263, -72.7670494],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9f6eb6a93720783cba8e50712be71eb5.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100B AND PONY FARM RD</b><br/>8:15 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c07c574629f66e2ebed7b62e1c3c77ca = L.circle(
+                [44.3118854, -72.7647826],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c07c574629f66e2ebed7b62e1c3c77ca.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 AND ATWOOD RD</b><br/>8:10 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f2e49a426bb7129179275dc3990fe46f = L.circle(
+                [44.3193036, -72.7646384],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_f2e49a426bb7129179275dc3990fe46f.bindTooltip(
+                `<div>
+                     <b>CROSSETT HL AND MORSE RD</b><br/>8:07 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c6bc175f362e622db7f6c05e820133bc = L.circle(
+                [44.33893239272707, -72.76438645],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c6bc175f362e622db7f6c05e820133bc.bindTooltip(
+                `<div>
+                     <b>1244 RIVER RD</b><br/>8:01 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4b5152a0ddac3535c84c9e73fdc5faae = L.circle(
+                [44.2758334, -72.7622038],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4b5152a0ddac3535c84c9e73fdc5faae.bindTooltip(
+                `<div>
+                     <b>STEVENS BROOK RD AND BAT HENNESEY RD AND UNNAMED</b><br/>7:41 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4553f42f53488f26d7cc73f3e2ac7297 = L.circle(
+                [44.337978, -72.7604329],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4553f42f53488f26d7cc73f3e2ac7297.bindTooltip(
+                `<div>
+                     <b>N MAIN ST AND WINOOSKI ST</b><br/>8:09 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e9e7d563398e0120ea725f07b678fb60 = L.circle(
+                [44.3436984, -72.7600282],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_e9e7d563398e0120ea725f07b678fb60.bindTooltip(
+                `<div>
+                     <b>N MAIN ST AND WALLACE ST</b><br/>7:57 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_381d958777c9e5e66c01e03cab8f0a11 = L.circle(
+                [44.2508002, -72.7579343],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_381d958777c9e5e66c01e03cab8f0a11.bindTooltip(
+                `<div>
+                     <b>MORETOWN MOUNTAIN RD AND MORETOWN COMMON RD</b><br/>8:13 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2ecf81769d58cde984df974f1780ecae = L.circle(
+                [44.3373439, -72.7559717],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2ecf81769d58cde984df974f1780ecae.bindTooltip(
+                `<div>
+                     <b>S MAIN ST AND ELM ST</b><br/>8:11 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5127d0eed4c940e0c16f3175cd609944 = L.circle(
+                [44.3373439, -72.7559717],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_5127d0eed4c940e0c16f3175cd609944.bindTooltip(
+                `<div>
+                     <b>S MAIN ST AND ELM ST</b><br/>8:10 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_650d383d5a2026f577b67e7f76520e42 = L.circle(
+                [44.3368705, -72.7559486],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_650d383d5a2026f577b67e7f76520e42.bindTooltip(
+                `<div>
+                     <b>NORTHFIELD SAVINGS BANK</b><br/>8:12 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4e7a36cc143999a8b3d97f573dcb051a = L.circle(
+                [44.3026137, -72.755058],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4e7a36cc143999a8b3d97f573dcb051a.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100 N AND COBB HILL RD</b><br/>8:15 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_90f13529c8ad2d308c8c7d886e5076df = L.circle(
+                [44.3309728, -72.7545329],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_90f13529c8ad2d308c8c7d886e5076df.bindTooltip(
+                `<div>
+                     <b>SOUTH MAIN STREET  AND  BATCHELDER/STATE DRIVE</b><br/>8:13 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_87a7359f06c9ac771cb4050a2af0d355 = L.circle(
+                [44.3309728, -72.7545329],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_87a7359f06c9ac771cb4050a2af0d355.bindTooltip(
+                `<div>
+                     <b>SOUTH MAIN STREET  AND  BATCHELDER/STATE DRIVE</b><br/>8:13 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8e88713f335ede67d8ace1e5e535eae9 = L.circle(
+                [44.2277276, -72.753405],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8e88713f335ede67d8ace1e5e535eae9.bindTooltip(
+                `<div>
+                     <b>SOUTH HILL ROAD  AND  PATTY HILL ROAD</b><br/>8:08 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_71358aa08694f95a97b236a984665ad0 = L.circle(
+                [44.32127895, -72.75330338],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_71358aa08694f95a97b236a984665ad0.bindTooltip(
+                `<div>
+                     <b>CROSSETT BROOK MIDDLE SCHOOL</b><br/>8:35 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_993ee6e26240f3bbeaa56e4a0965e625 = L.circle(
+                [44.32127895, -72.75330338],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_993ee6e26240f3bbeaa56e4a0965e625.bindTooltip(
+                `<div>
+                     <b>CROSSETT BROOK MIDDLE SCHOOL</b><br/>8:19 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_25552e7f91a18d6be0a9f9cbd39e2634 = L.circle(
+                [44.32127895, -72.75330338],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_25552e7f91a18d6be0a9f9cbd39e2634.bindTooltip(
+                `<div>
+                     <b>CROSSETT BROOK MIDDLE SCHOOL</b><br/>8:18 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4ac6ae3d60a632e0a57ab9b9d71e6df2 = L.circle(
+                [44.32127895, -72.75330338],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4ac6ae3d60a632e0a57ab9b9d71e6df2.bindTooltip(
+                `<div>
+                     <b>CROSSETT BROOK MIDDLE SCHOOL</b><br/>8:18 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9801dc656dabb86226abf69dbd8c701e = L.circle(
+                [44.32127895, -72.75330338],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9801dc656dabb86226abf69dbd8c701e.bindTooltip(
+                `<div>
+                     <b>CROSSETT BROOK MIDDLE SCHOOL</b><br/>8:18 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_99dbca6984f24ba29bcbb4023089adcd = L.circle(
+                [44.32127895, -72.75330338],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_99dbca6984f24ba29bcbb4023089adcd.bindTooltip(
+                `<div>
+                     <b>CROSSETT BROOK MIDDLE SCHOOL</b><br/>8:18 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_373b415a86d3fd62a42487700201d2be = L.circle(
+                [44.32127895, -72.75330338],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_373b415a86d3fd62a42487700201d2be.bindTooltip(
+                `<div>
+                     <b>CROSSETT BROOK MIDDLE SCHOOL</b><br/>8:18 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_67f6403a93f0e71939fdfca1724e07dc = L.circle(
+                [44.3371392, -72.7532185],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_67f6403a93f0e71939fdfca1724e07dc.bindTooltip(
+                `<div>
+                     <b>STOWE ST AND UNION ST AND RAILROAD ST</b><br/>8:11 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7efcdb9882aa0358fa22fd26b459656d = L.circle(
+                [44.3255649, -72.7532105],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_7efcdb9882aa0358fa22fd26b459656d.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND MEADOW LN</b><br/>7:52 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fe10f50b6d8bcf1fc6116358fb2e5219 = L.circle(
+                [44.3346025, -72.7531811],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_fe10f50b6d8bcf1fc6116358fb2e5219.bindTooltip(
+                `<div>
+                     <b>PARK ROW AND S MAIN ST</b><br/>8:13 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6cc03f165c7f340b8be92bda50134bbc = L.circle(
+                [44.3346025, -72.7531811],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_6cc03f165c7f340b8be92bda50134bbc.bindTooltip(
+                `<div>
+                     <b>PARK ROW AND S MAIN ST</b><br/>8:11 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2c5f67fbbbb0da4da0351581dd6cb67c = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2c5f67fbbbb0da4da0351581dd6cb67c.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND DUXFARM EST</b><br/>7:53 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ac40c845399a96d304d9a32c5a6036de = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#2d6f8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d6f8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ac40c845399a96d304d9a32c5a6036de.bindTooltip(
+                `<div>
+                     <b>WARD HILL RD AND TURNAROUND POINT</b><br/>8:21 AM<br/>01 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_df9fc8e8d2d7824d24d628688e1db313 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_df9fc8e8d2d7824d24d628688e1db313.bindTooltip(
+                `<div>
+                     <b>MAPLE ST AND HOWARD AVE</b><br/>7:57 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_02826ceeaf9ffecc61f5119c405bea76 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_02826ceeaf9ffecc61f5119c405bea76.bindTooltip(
+                `<div>
+                     <b>GUPTIL RD AND VIENS EST</b><br/>8:07 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cd9560e08eb2f10611acb0984e091970 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_cd9560e08eb2f10611acb0984e091970.bindTooltip(
+                `<div>
+                     <b>RIVER RD AND DEER RUN LN</b><br/>7:58 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1e94eaaa3288c47da1b46da5dba6a044 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_1e94eaaa3288c47da1b46da5dba6a044.bindTooltip(
+                `<div>
+                     <b>BROOK RD AND HUMMINGBIRD LN</b><br/>7:56 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_de78ca9ec602b2f855c5548c97930c51 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#1f928c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f928c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_de78ca9ec602b2f855c5548c97930c51.bindTooltip(
+                `<div>
+                     <b>NORTH RD AND WHITE PINE DR</b><br/>8:07 AM<br/>13 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c3889d737698c907ae01b1324ea38d8c = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c3889d737698c907ae01b1324ea38d8c.bindTooltip(
+                `<div>
+                     <b>STATE TURNAROUND GRANVILLE/WARREN TOWN LINE</b><br/>7:54 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_948a43395876d62b031ec48562df8cbe = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_948a43395876d62b031ec48562df8cbe.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND FULLER HILL RD</b><br/>8:00 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b4b5cbc5a8883e23a153c25b706b45cb = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b4b5cbc5a8883e23a153c25b706b45cb.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND FLAT IRON RD</b><br/>8:01 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c802c554aefdc4995a484abf99e755f2 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c802c554aefdc4995a484abf99e755f2.bindTooltip(
+                `<div>
+                     <b>ELLEN LN AND WHITWORTH RD</b><br/>8:03 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a5651d3d1b16a002040539943ca12f79 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a5651d3d1b16a002040539943ca12f79.bindTooltip(
+                `<div>
+                     <b>INFORMATION CENTER</b><br/>8:05 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ed9bce9c93dd8517e32d11fe10458dd1 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ed9bce9c93dd8517e32d11fe10458dd1.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND BUNDY RD</b><br/>8:08 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_959b4ac02953d1b08026f1928acefc64 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_959b4ac02953d1b08026f1928acefc64.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND FIDDLERS GRN</b><br/>8:11 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1f86027c0ef02c29367224471e4d2124 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_1f86027c0ef02c29367224471e4d2124.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND CARROLL RD</b><br/>8:13 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f05f1a1ee3a92cd92928e62f25ad9a19 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#22898d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22898d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_f05f1a1ee3a92cd92928e62f25ad9a19.bindTooltip(
+                `<div>
+                     <b>MAIN ST AND OLD COUNTY RD</b><br/>8:17 AM<br/>14 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_98a88fbf2384dbdf4fc361a6a1724089 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_98a88fbf2384dbdf4fc361a6a1724089.bindTooltip(
+                `<div>
+                     <b>PLUNKTON RD AND HILLSIDE RD</b><br/>7:36 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_63b0772456445d4783be85578aadf704 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_63b0772456445d4783be85578aadf704.bindTooltip(
+                `<div>
+                     <b>FULLER HILL ROAD AND PRICKLY MOUNTAIN RD AND SENOR RD</b><br/>7:40 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e5ec86b2f4ba5bdfa1cef6f1ae779ac5 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_e5ec86b2f4ba5bdfa1cef6f1ae779ac5.bindTooltip(
+                `<div>
+                     <b>PRICKLY MOUNTAIN RD AND BUZZELL RD AND BUZZEL ROAD TU</b><br/>7:43 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_be77a94f634928e684e749e5c6bf97b5 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_be77a94f634928e684e749e5c6bf97b5.bindTooltip(
+                `<div>
+                     <b>PLUNKTON RD AND ROBINSON RD</b><br/>7:48 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a46ffdf0321c20e19650bd56376d05be = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a46ffdf0321c20e19650bd56376d05be.bindTooltip(
+                `<div>
+                     <b>AIRPORT RD AND AIRPORT/OLE XC SKI AREA AND UNNAMED</b><br/>7:53 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cb84e8697ad3f0f1fd8176ffda7eb571 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_cb84e8697ad3f0f1fd8176ffda7eb571.bindTooltip(
+                `<div>
+                     <b>AIRPORT RD AND DUMP RD</b><br/>7:54 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_af3bbd3a8881a2dc3add80da6b4c1083 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_af3bbd3a8881a2dc3add80da6b4c1083.bindTooltip(
+                `<div>
+                     <b>TRANSFER CBMS STUDENTS TO H 13</b><br/>8:19 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_eb88b15adae110d306b89dbe938025e0 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_eb88b15adae110d306b89dbe938025e0.bindTooltip(
+                `<div>
+                     <b>LINCOLN GAP RD AND W HILL RD</b><br/>7:46 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2b6be2a3cc9a415c60ed45268228b265 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2b6be2a3cc9a415c60ed45268228b265.bindTooltip(
+                `<div>
+                     <b>W HILL RD AND S HOLLOW RD</b><br/>7:47 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_945ffadeddfe88db81754e5ded88f965 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_945ffadeddfe88db81754e5ded88f965.bindTooltip(
+                `<div>
+                     <b>W HILL RD AND STONY HILL RD</b><br/>7:48 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_41150d4f354b27dbdb8d1020a550c3a9 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_41150d4f354b27dbdb8d1020a550c3a9.bindTooltip(
+                `<div>
+                     <b>W HILL RD AND RETRIEVER RUN</b><br/>7:49 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ebec34d1470fa0ab0e7bf5d9b66a9508 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ebec34d1470fa0ab0e7bf5d9b66a9508.bindTooltip(
+                `<div>
+                     <b>W HILL RD AND ROCKY RD</b><br/>7:50 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8322372e304aa1c34a76cc3107d11427 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8322372e304aa1c34a76cc3107d11427.bindTooltip(
+                `<div>
+                     <b>INFERNO RD AND RUMBLE RD</b><br/>7:52 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_19a6f4e88d369ec3e9daf8f815e93bb3 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_19a6f4e88d369ec3e9daf8f815e93bb3.bindTooltip(
+                `<div>
+                     <b>SUGARBUSH  AND  BRIDGES</b><br/>7:55 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b3b12109d24239ddb276d90f5d52f813 = L.circle(
+                [44.3270012, -72.7526175],
+                {"bubblingMouseEvents": true, "color": "#471466", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#471466", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b3b12109d24239ddb276d90f5d52f813.bindTooltip(
+                `<div>
+                     <b>TRANSFER CBMS STUDENTS TO H 13</b><br/>8:19 AM<br/>16 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5ce79cda78e85ea70be410f28f8520ac = L.circle(
+                [44.23610559999999, -72.7519026],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_5ce79cda78e85ea70be410f28f8520ac.bindTooltip(
+                `<div>
+                     <b>S HILL RD AND ROBBINS WAY</b><br/>8:06 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_58539d3fbfce845df7d12e974d11b341 = L.circle(
+                [44.3407062, -72.7517944],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_58539d3fbfce845df7d12e974d11b341.bindTooltip(
+                `<div>
+                     <b>STOWE ST AND HILLCREST TER</b><br/>8:10 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_399f42006b2e80039d74cb354ab52123 = L.circle(
+                [44.326545, -72.750284],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_399f42006b2e80039d74cb354ab52123.bindTooltip(
+                `<div>
+                     <b>58 N MAIN STREET</b><br/>7:56 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_95c624c56fef0a6051285a4819c5f5ae = L.circle(
+                [44.2533999, -72.7497686],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_95c624c56fef0a6051285a4819c5f5ae.bindTooltip(
+                `<div>
+                     <b>MORETOWN COMMON RD AND DEANS MOUNTAIN</b><br/>7:49 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_be9a02ede42ebe12fb5a2169b96c4a21 = L.circle(
+                [44.3520831, -72.7483521],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_be9a02ede42ebe12fb5a2169b96c4a21.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL  AND  BLACKBERRY LANE</b><br/>8:06 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e55222575bf452d6333a97849958559c = L.circle(
+                [44.3573415, -72.7482071],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_e55222575bf452d6333a97849958559c.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL RD AND COUNTRYSIDE RD</b><br/>8:04 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_36c3b6dde98ad5c299729a8b97a00677 = L.circle(
+                [44.3589722, -72.7480346],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_36c3b6dde98ad5c299729a8b97a00677.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL ROAD  AND  LONESOME TRAIL</b><br/>8:03 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9135bdf2c314f81d2cb3be24c13501c9 = L.circle(
+                [44.3414723, -72.7478953],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9135bdf2c314f81d2cb3be24c13501c9.bindTooltip(
+                `<div>
+                     <b>STOWE ST AND EAST ST</b><br/>8:08 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_35512a7586d408d9cbfd7abc0ba3428e = L.circle(
+                [44.3298824, -72.7478372],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_35512a7586d408d9cbfd7abc0ba3428e.bindTooltip(
+                `<div>
+                     <b>S MAIN ST AND DEMERITT PL</b><br/>8:14 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f17fea74970d1a17cda998a2eeeac0ab = L.circle(
+                [44.3484897, -72.7473585],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_f17fea74970d1a17cda998a2eeeac0ab.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL RD AND KIMBERLY LN</b><br/>8:07 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e591f3d1ecee599cc7df5fe438f354e0 = L.circle(
+                [44.3462499, -72.7472692],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_e591f3d1ecee599cc7df5fe438f354e0.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL RD AND KENNEDY DR</b><br/>8:08 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ca16a4f1f2fdbd432107484029a14488 = L.circle(
+                [44.3432896, -72.7467476],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ca16a4f1f2fdbd432107484029a14488.bindTooltip(
+                `<div>
+                     <b>STOWE ST AND ROLLING MEADOWS LN</b><br/>8:07 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_82d49f47e7ea2ddab7b3fa652a6e5d0f = L.circle(
+                [44.3286779, -72.7462626],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_82d49f47e7ea2ddab7b3fa652a6e5d0f.bindTooltip(
+                `<div>
+                     <b>S MAIN ST AND RIVER RD</b><br/>8:15 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_66541ec9ac8cfca0192a123123b56a92 = L.circle(
+                [44.3286779, -72.7462626],
+                {"bubblingMouseEvents": true, "color": "#1e9f88", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9f88", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_66541ec9ac8cfca0192a123123b56a92.bindTooltip(
+                `<div>
+                     <b>S MAIN ST AND RIVER RD</b><br/>8:15 AM<br/>06 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ebd453d9457cf14238f8d17ffdc7f8a0 = L.circle(
+                [44.3629974, -72.7454097],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ebd453d9457cf14238f8d17ffdc7f8a0.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL RD AND RACHEL RD</b><br/>7:58 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f8905573a8eae28c9ce99c6b5cdef779 = L.circle(
+                [44.3633223, -72.7452547],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_f8905573a8eae28c9ce99c6b5cdef779.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL RD AND NANNACHER RD</b><br/>8:01 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_09fbc15969b2b67166ba42453a1a5a18 = L.circle(
+                [44.2768023, -72.7437122],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_09fbc15969b2b67166ba42453a1a5a18.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100B AND DAMON DR</b><br/>7:30 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2e19cabbe3726c8cdd73fa652651f4f8 = L.circle(
+                [44.36668359999999, -72.7431854],
+                {"bubblingMouseEvents": true, "color": "#38b976", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38b976", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2e19cabbe3726c8cdd73fa652651f4f8.bindTooltip(
+                `<div>
+                     <b>BLUSH HILL RD  AND  BLUSH HILL ESTATES</b><br/>8:00 AM<br/>04 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d3d0cac08a4be1224ae76416ca090775 = L.circle(
+                [44.3438824, -72.7426405],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d3d0cac08a4be1224ae76416ca090775.bindTooltip(
+                `<div>
+                     <b>PERRY HILL RD AND TYLER RDG/WATERBURY COMMON</b><br/>8:05 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7e1924520f231394325ef7d16eac2f17 = L.circle(
+                [44.3234024, -72.742423],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_7e1924520f231394325ef7d16eac2f17.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND FAIRGROUND RD</b><br/>8:14 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6d73baaa3360fcd1e8e06803bb74b58b = L.circle(
+                [44.3502036, -72.7421421],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_6d73baaa3360fcd1e8e06803bb74b58b.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND LAUREL LN</b><br/>7:38 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_64492402f72339f4e27b61115bff4fe1 = L.circle(
+                [44.322676, -72.7415],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_64492402f72339f4e27b61115bff4fe1.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND GALLAGHER ACRES AND GALLAGHER ACRES TU</b><br/>8:13 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e71bf6884329031a76985f8e245cbc55 = L.circle(
+                [44.3970721, -72.7368105],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_e71bf6884329031a76985f8e245cbc55.bindTooltip(
+                `<div>
+                     <b>GREGG HILL RD AND DEACONS WAY</b><br/>7:59 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bc01a351acb359dca67306cd8b429742 = L.circle(
+                [44.3214456, -72.7367299],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_bc01a351acb359dca67306cd8b429742.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND SHERMAN DR</b><br/>8:12 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_13804d7778be653820400ca8e1879d2a = L.circle(
+                [44.320073, -72.7348019],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_13804d7778be653820400ca8e1879d2a.bindTooltip(
+                `<div>
+                     <b>818 US ROUTE 2</b><br/>8:12 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5832339d3975123e8806990ecc452bd0 = L.circle(
+                [44.3415121, -72.734591],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_5832339d3975123e8806990ecc452bd0.bindTooltip(
+                `<div>
+                     <b>2360 PERRY HILL ROAD</b><br/>7:59 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_377b7f748782bde57cdf4366d4d2cfa9 = L.circle(
+                [44.2855036, -72.7339084],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_377b7f748782bde57cdf4366d4d2cfa9.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100B AND TAC HEIGHTS RD</b><br/>7:32 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_981844659cb8276742c8792898d82c06 = L.circle(
+                [44.2618598, -72.7313987],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_981844659cb8276742c8792898d82c06.bindTooltip(
+                `<div>
+                     <b>MORETOWN COMMON RD AND FARNHAM RD AND HOWES RD</b><br/>7:52 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9400d1086d1359fd3f35fed102672fea = L.circle(
+                [44.2618598, -72.7313987],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9400d1086d1359fd3f35fed102672fea.bindTooltip(
+                `<div>
+                     <b>MORETOWN COMMON RD AND FARNHAM RD</b><br/>7:55 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8f138b77450dbf0568ac8ae81eb1318e = L.circle(
+                [44.3547537, -72.7311365],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8f138b77450dbf0568ac8ae81eb1318e.bindTooltip(
+                `<div>
+                     <b>240 GUPTIL RD</b><br/>8:08 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_21a7619402e834038f4cc8e64baf2c77 = L.circle(
+                [44.3652282, -72.7308027],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_21a7619402e834038f4cc8e64baf2c77.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND STOWEBURY</b><br/>7:40 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bc3d95036b9e6f2212e96594a08ff407 = L.circle(
+                [44.2436245, -72.7302508],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_bc3d95036b9e6f2212e96594a08ff407.bindTooltip(
+                `<div>
+                     <b>MORETOWN MOUNTAIN RD AND HOWES RD</b><br/>8:02 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_da1dd1ac7344843f9bb121db93baabb5 = L.circle(
+                [44.3170855, -72.7299748],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_da1dd1ac7344843f9bb121db93baabb5.bindTooltip(
+                `<div>
+                     <b>1118 US Route 2</b><br/>8:12 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d5d7574126d1f79a5b7d87dcd40bd113 = L.circle(
+                [44.317757, -72.7287334],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d5d7574126d1f79a5b7d87dcd40bd113.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND MINER RD</b><br/>8:11 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ecff130309ca2c117acaaf917cbc54ba = L.circle(
+                [44.3691183, -72.7282882],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ecff130309ca2c117acaaf917cbc54ba.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND E WIND DR</b><br/>7:41 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8f60f685b098fb924d4e3e80098a5697 = L.circle(
+                [44.342852, -72.7279544],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8f60f685b098fb924d4e3e80098a5697.bindTooltip(
+                `<div>
+                     <b>938 PERRY HILL RD</b><br/>8:03 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e0e14ce874e5deecfec1c8456bfe5a17 = L.circle(
+                [44.3170529, -72.7277606],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_e0e14ce874e5deecfec1c8456bfe5a17.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND SOAPSTONE RD #2</b><br/>8:10 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_43d8f027f98ee1911918d6f4b5ab3b7c = L.circle(
+                [44.3705581, -72.7274244],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_43d8f027f98ee1911918d6f4b5ab3b7c.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND MCNEIL RD</b><br/>7:42 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9caab39447a80b146b4fa3f0af42c7ac = L.circle(
+                [44.3153711, -72.726323],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9caab39447a80b146b4fa3f0af42c7ac.bindTooltip(
+                `<div>
+                     <b>1360 US ROUTE 2</b><br/>8:10 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_091f3fb9b99a78bf8d88d49f760333e6 = L.circle(
+                [44.3624097, -72.7258052],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_091f3fb9b99a78bf8d88d49f760333e6.bindTooltip(
+                `<div>
+                     <b>861 GUPTIL ROAD</b><br/>8:07 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3718938a215d5ede7ff09675e667682a = L.circle(
+                [44.343483, -72.7235368],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_3718938a215d5ede7ff09675e667682a.bindTooltip(
+                `<div>
+                     <b>LINCOLN ST AND PERRY HILL RD</b><br/>8:06 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d3dce4c35809f37862e9f32083049e77 = L.circle(
+                [44.3901425, -72.7227558],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d3dce4c35809f37862e9f32083049e77.bindTooltip(
+                `<div>
+                     <b>GREGG HILL RD AND FULLER ACRES DR</b><br/>8:03 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8790f1e319e60f6e35258748ddae8615 = L.circle(
+                [44.4187902, -72.7227127],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8790f1e319e60f6e35258748ddae8615.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND RUSSELL RD</b><br/>7:52 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d611d419c2a554b917ff828c6f2b6405 = L.circle(
+                [44.3428966, -72.7225309],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d611d419c2a554b917ff828c6f2b6405.bindTooltip(
+                `<div>
+                     <b>PERRY HILL RD AND STUART LN</b><br/>8:02 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ff77a2520f24b3d7da97df149177e1f1 = L.circle(
+                [44.3126033, -72.7222207],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ff77a2520f24b3d7da97df149177e1f1.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND MAJESTIC DR AND EDGE DR</b><br/>8:09 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f66c945759d61254765df46539646384 = L.circle(
+                [44.4156315, -72.7221159],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_f66c945759d61254765df46539646384.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND RUBY RAYMOND RD</b><br/>7:51 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0c46de0a6ed89463afa207ad93602336 = L.circle(
+                [44.2655852, -72.721919],
+                {"bubblingMouseEvents": true, "color": "#51c468", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#51c468", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_0c46de0a6ed89463afa207ad93602336.bindTooltip(
+                `<div>
+                     <b>MORETOWN COMMON RD AND MISTY HILLTOP</b><br/>7:53 AM<br/>11 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2e9d04d28d673df8bcb309be3fea1ce2 = L.circle(
+                [44.3791889, -72.7218736],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2e9d04d28d673df8bcb309be3fea1ce2.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND LAKEVIEW TER</b><br/>8:07 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_05bce3ac4ece173dd820e9cd53d37964 = L.circle(
+                [44.3120189, -72.721412],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_05bce3ac4ece173dd820e9cd53d37964.bindTooltip(
+                `<div>
+                     <b>1716 US ROUTE 2</b><br/>8:09 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cbf0e087447bc051ba221eee63a521d8 = L.circle(
+                [44.3766817, -72.7213881],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_cbf0e087447bc051ba221eee63a521d8.bindTooltip(
+                `<div>
+                     <b>HOWARD AVE AND METAYER CT</b><br/>7:44 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6fda697980b155e7edda7a37eac7a4d9 = L.circle(
+                [44.3818505, -72.7206286],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_6fda697980b155e7edda7a37eac7a4d9.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND SUNSET DR</b><br/>7:46 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1dfccb6f7d240bbe6a97289685b628af = L.circle(
+                [44.3818505, -72.7206286],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_1dfccb6f7d240bbe6a97289685b628af.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND SUNSET DR</b><br/>8:06 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_219d1808f27f256b0ec1777eba59f393 = L.circle(
+                [44.3120233, -72.719727],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_219d1808f27f256b0ec1777eba59f393.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND NOYES RD AND GAMBRIL DR AND NOYES ROAD TUR</b><br/>8:09 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a4c1d767073c810736689e0fd7dbe8c0 = L.circle(
+                [44.3955765, -72.719202],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a4c1d767073c810736689e0fd7dbe8c0.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD  AND  WILDFLOWER LN</b><br/>7:47 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4b305d5d1673a99e6c6202c4c0fdbd11 = L.circle(
+                [44.38902789999999, -72.7189003],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4b305d5d1673a99e6c6202c4c0fdbd11.bindTooltip(
+                `<div>
+                     <b>WATERBURY STOWE RD AND GREGG HILL RD</b><br/>8:05 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_23d6c74b2a0dee68a4d755b2a93d777d = L.circle(
+                [44.3759363, -72.718624],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_23d6c74b2a0dee68a4d755b2a93d777d.bindTooltip(
+                `<div>
+                     <b>GUPTIL RD AND MAPLE ST</b><br/>7:58 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6d800b019e5cdd7cfeeef1e77f98dc56 = L.circle(
+                [44.4097379, -72.7186054],
+                {"bubblingMouseEvents": true, "color": "#30b47a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30b47a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_6d800b019e5cdd7cfeeef1e77f98dc56.bindTooltip(
+                `<div>
+                     <b>SPRUCE HAVEN ROAD</b><br/>7:50 AM<br/>02 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4ba29bf1d9c7451b466d4759620cc694 = L.circle(
+                [44.3731499, -72.7185739],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_4ba29bf1d9c7451b466d4759620cc694.bindTooltip(
+                `<div>
+                     <b>GUPTIL RD AND KELTAN HTS</b><br/>7:59 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_efe2188e200ec70b735d0a81c144e54d = L.circle(
+                [44.31165559999999, -72.7180703],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_efe2188e200ec70b735d0a81c144e54d.bindTooltip(
+                `<div>
+                     <b>US ROUTE 2 AND FOGGY MOUNTAIN DR</b><br/>8:08 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_76895abdaad13379748151be3851d14b = L.circle(
+                [44.3743612, -72.7179063],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_76895abdaad13379748151be3851d14b.bindTooltip(
+                `<div>
+                     <b>GUPTIL RD  AND  WOODARD LN / 1842 GUPTIL ROAD</b><br/>7:59 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fd4d3632e864b894c71307865790ea6b = L.circle(
+                [44.36059239999999, -72.7175797],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_fd4d3632e864b894c71307865790ea6b.bindTooltip(
+                `<div>
+                     <b>KNEELAND FLATS AND HARVEY FARM RD</b><br/>8:02 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a0f765f2e954af7ceed797d23b95b28c = L.circle(
+                [44.39204660000001, -72.7163371],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a0f765f2e954af7ceed797d23b95b28c.bindTooltip(
+                `<div>
+                     <b>GUILD HILL RD AND COOPERS LNDG</b><br/>7:34 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5e9cb9869684addc55e95057252d8d05 = L.circle(
+                [44.391677, -72.7153009],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_5e9cb9869684addc55e95057252d8d05.bindTooltip(
+                `<div>
+                     <b>GUILD HILL RD AND MAGGIES WAY</b><br/>7:34 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8318b31f8d37a8c13ed567e170ba7858 = L.circle(
+                [44.3599307, -72.7145632],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8318b31f8d37a8c13ed567e170ba7858.bindTooltip(
+                `<div>
+                     <b>KNEELAND FLATS AND TWIN PEAKS RD</b><br/>8:03 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f09f52828ad83d52bff627d8c432adc1 = L.circle(
+                [44.3911893, -72.7140756],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_f09f52828ad83d52bff627d8c432adc1.bindTooltip(
+                `<div>
+                     <b>MAPLE ST AND GUILD HILL RD</b><br/>7:36 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cd1c6b81ac9de12a6f0a46e749336426 = L.circle(
+                [44.37716570000001, -72.7127461],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_cd1c6b81ac9de12a6f0a46e749336426.bindTooltip(
+                `<div>
+                     <b>LOOMIS HILL RD AND HUNGER MOUNTAIN RD</b><br/>7:42 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_10a294ca27d30f7bb2767a64ad55fcd8 = L.circle(
+                [44.3813414, -72.7107957],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_10a294ca27d30f7bb2767a64ad55fcd8.bindTooltip(
+                `<div>
+                     <b>MAPLE ST AND THATCHER MEADOW LN</b><br/>7:40 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9126940e522e81812786519c8ae7ca51 = L.circle(
+                [44.3423428, -72.7105002],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9126940e522e81812786519c8ae7ca51.bindTooltip(
+                `<div>
+                     <b>PERRY HILL RD AND TOWN RD</b><br/>8:01 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d47144c134ea739ba3730aa68d3f36d0 = L.circle(
+                [44.357977, -72.7057437],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d47144c134ea739ba3730aa68d3f36d0.bindTooltip(
+                `<div>
+                     <b>KNEELAND FLATS AND KNEELAND FLATS TRAILER PARK AND KN</b><br/>8:05 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b51d8402035cdea12228a018f57d5e3d = L.circle(
+                [44.3804391, -72.7038707],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b51d8402035cdea12228a018f57d5e3d.bindTooltip(
+                `<div>
+                     <b>LOOMIS HILL RD AND HUBBARD FARM ROAD</b><br/>7:54 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c814ddbea1e886b333457ab12698d7c7 = L.circle(
+                [44.2880622, -72.7008747],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c814ddbea1e886b333457ab12698d7c7.bindTooltip(
+                `<div>
+                     <b>VT ROUTE 100B AND BRUCE DR</b><br/>7:35 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a39dfbddf3d36714fb4ab7a55caa655b = L.circle(
+                [44.3592237, -72.7004961],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_a39dfbddf3d36714fb4ab7a55caa655b.bindTooltip(
+                `<div>
+                     <b>SHAW MANSION RD AND MANSION HOLLOW RD</b><br/>7:54 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_13281802c8e72402cefc783c258c41e4 = L.circle(
+                [44.3442698, -72.6992178],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_13281802c8e72402cefc783c258c41e4.bindTooltip(
+                `<div>
+                     <b>PERRY HILL RD AND UPLAND MOWING RD</b><br/>7:58 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c473e06668b1e47ff35a3c7903f7a3a5 = L.circle(
+                [44.3657231, -72.6983908],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_c473e06668b1e47ff35a3c7903f7a3a5.bindTooltip(
+                `<div>
+                     <b>641 SHAW MANSION RD</b><br/>7:52 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dad7fed04481614e43c81c338a6c547f = L.circle(
+                [44.3451887, -72.6977522],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_dad7fed04481614e43c81c338a6c547f.bindTooltip(
+                `<div>
+                     <b>PERRY HILL RD AND PERRY LEA RD</b><br/>7:58 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8b6fe5f9d8d231c63e24257c35c33b52 = L.circle(
+                [44.37775312, -72.69685157],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8b6fe5f9d8d231c63e24257c35c33b52.bindTooltip(
+                `<div>
+                     <b>402 VALLEY VIEW RD</b><br/>7:51 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_437a3bcd3b216fa7fbf00a34cfa53b42 = L.circle(
+                [44.3494506, -72.695469],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_437a3bcd3b216fa7fbf00a34cfa53b42.bindTooltip(
+                `<div>
+                     <b>PERRY HILL RD AND ALPINE MEADOW LN</b><br/>7:57 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_db79a69827ebca0277a811d7d7a95705 = L.circle(
+                [44.3742432, -72.695449],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_db79a69827ebca0277a811d7d7a95705.bindTooltip(
+                `<div>
+                     <b>SHAW MANSION RD AND WORCESTER VIEW DR</b><br/>7:49 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2214b75bae805c29217b447c7c147ddf = L.circle(
+                [44.3594696, -72.6902605],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_2214b75bae805c29217b447c7c147ddf.bindTooltip(
+                `<div>
+                     <b>KNEELAND FLTS AND RIPLEY RD AND RING RD</b><br/>7:48 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9ce5b06880c558dac2080807fa6630e9 = L.circle(
+                [44.37991359999999, -72.689953],
+                {"bubblingMouseEvents": true, "color": "#45065a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45065a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_9ce5b06880c558dac2080807fa6630e9.bindTooltip(
+                `<div>
+                     <b>SHAW MANSION RD AND THURSTON LN</b><br/>7:47 AM<br/>03 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_661e91b569ff642022b7c7d96e3a45c8 = L.circle(
+                [44.3636689, -72.6874129],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_661e91b569ff642022b7c7d96e3a45c8.bindTooltip(
+                `<div>
+                     <b>RIPLEY RD AND GROVE LN</b><br/>7:46 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_79f81795e518e80f102de5a3da468f7c = L.circle(
+                [44.3638764, -72.6873105],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_79f81795e518e80f102de5a3da468f7c.bindTooltip(
+                `<div>
+                     <b>RIPLEY RD AND STAGECOACH LN</b><br/>7:46 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b410b4ad174581e3e6d1034a71ab5af6 = L.circle(
+                [44.3667175, -72.6864427],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_b410b4ad174581e3e6d1034a71ab5af6.bindTooltip(
+                `<div>
+                     <b>RIPLEY RD AND MILLER LN</b><br/>7:45 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8670709da3f6ab4a46822915aa8d723e = L.circle(
+                [44.294298, -72.682883],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_8670709da3f6ab4a46822915aa8d723e.bindTooltip(
+                `<div>
+                     <b>RED HEN BAKERY</b><br/>8:04 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_65413ad4a513ba705c7aeb69eb53952c = L.circle(
+                [44.3783842, -72.6821721],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_65413ad4a513ba705c7aeb69eb53952c.bindTooltip(
+                `<div>
+                     <b>RIPLEY RD AND SUGARHOUSE RD</b><br/>7:42 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ed237987eeed66aab27c7a326adb0bca = L.circle(
+                [44.3953865, -72.6764234],
+                {"bubblingMouseEvents": true, "color": "#277c8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#277c8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_ed237987eeed66aab27c7a326adb0bca.bindTooltip(
+                `<div>
+                     <b>SWEET RD No Intersection</b><br/>7:41 AM<br/>07 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d0cd824e8f74c189771b121cfb221a7c = L.circle(
+                [44.2412266, -72.6588706],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d0cd824e8f74c189771b121cfb221a7c.bindTooltip(
+                `<div>
+                     <b>JONES BROOK ROAD AND LYNCH HILL RD</b><br/>7:50 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d77b6845c7eab22cf654763320b4e607 = L.circle(
+                [44.243829, -72.658732],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_d77b6845c7eab22cf654763320b4e607.bindTooltip(
+                `<div>
+                     <b>JONES BROOK RD AND HERRING BROOK RD</b><br/>7:51 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5ed12aafade2814335e8eddf68e4e8e0 = L.circle(
+                [44.2451667, -72.6581481],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_5ed12aafade2814335e8eddf68e4e8e0.bindTooltip(
+                `<div>
+                     <b>1995 JONES BROOK RD</b><br/>7:52 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_24d637780e473b313bc18988b91f9776 = L.circle(
+                [44.2506805, -72.6531714],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_24d637780e473b313bc18988b91f9776.bindTooltip(
+                `<div>
+                     <b>JONES BROOK RD AND WARD BROOK RD</b><br/>7:53 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e38dc2724aab801dd55eed6b611c1dcb = L.circle(
+                [44.25315140000001, -72.6497884],
+                {"bubblingMouseEvents": true, "color": "#47c06e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#47c06e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_e38dc2724aab801dd55eed6b611c1dcb.bindTooltip(
+                `<div>
+                     <b>1289 JONES BROOK ROAD</b><br/>7:54 AM<br/>09 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_eaebdd8518ee7322db9f1919e302ee06 = L.circle(
+                [44.104174, -72.829345],
+                {"bubblingMouseEvents": true, "color": "#33618d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33618d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75, "stroke": true, "weight": 3}
+            ).addTo(map_40ecfefb9f030932196115abedc6d558);
+        
+    
+            circle_eaebdd8518ee7322db9f1919e302ee06.bindTooltip(
+                `<div>
+                     <b>BROOK RD AND PIKE HILL RD</b><br/>7:28 AM<br/>15 AM HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
